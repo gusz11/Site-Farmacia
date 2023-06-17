@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+}
+
+.body {
+    background-color: var(--background-color);
+}
+
+:root {
+    --badge-color:#206934;
+    --text-color: black;
+    --background-color: #fff;
+    --footer-color: #4B7A27;
+    --home-button: url(../svg/home.svg);
+}
+
+.dark {
+    --badge-color:#206934;
+    --text-color: white;
+    --background-color: #2E2E2E;
+    --footer-color: #4B7A27;
+    --home-button: url(../svg/homedark.svg);
+}
+
+#badge {
+position: relative;
+width: 10em;
+height: 66px;
+margin-top: 75px;
+margin-left: 12.5vw;
+margin-bottom: 104px;
+background-color: var(--badge-color);
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+color: #E6F4EA;
+align-items: center;
+}
+
+#home button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent !important;
+    border: 0;
+    background-image: var(--home-button);
+    margin-left: 165px;
+    margin-top: -50px;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media (max-width: 767.98px) {
+#home button {
+ right: 83%;
+}}
+
+#home {
+    transition: transform 0.5s;
+}
+
+#home:hover {
+    transform: translateY(-5px);
+}
+
+#home button:active{
+    outline: none;
+}
+
+#home button:focus {
+    outline: none;
+}
+
+@media (max-width: 767.98px) {
+    #badge {
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }}
+
+.embed-responsive{
+    float: right;
+}
+
+#video{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#dropup{
+    background-color:#F5E7CC;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: black;
+    transition: transform 0.5s;
+    width: 7rem;
+}
+
+#dropup:hover {
+    transform: translateY(-3px);
+}
+
+.dropdown-menu {
+    background-color:#F5E7CC !important;
+    border-color: solid #F5E7CC !important;
+}
+
+@media (max-width: 767.98px) {
+    #video {
+      padding: 50%; /* Proporção para manter a relação de aspecto 16:9 */
+      position: relative !important ;
+      display: block !important;
+      margin: auto !important;
+      margin-right: 5px !important;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    #dropup {
+      position: relative !important ;
+      display: block !important;
+      margin-right: 100px !important;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .footer {
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+        background-color: var(--footer-color);
+        width: 100%;
+        position: relative !important;
+    }
+  }
+
+#h4{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;    
+    color: var(--text-color);
+    margin-left: 38px;
+}
+
+p{
+    margin-left: 38px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color);
+}
+
+#h6{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color);
+}
+
+.footer {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--footer-color);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.navfooter ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    position: relative;
+    top: 7px;
+    left: 150px;
+}
+
+.navfooter img{
+    transition: transform 0.5s;
+}
+
+.navfooter img:hover{
+    transform: translateY(-5px);
+
+}
+
+
+.footer-content {
+    color: #fff;
+}
+
+#eu {
+    position: relative;
+    float: right;
+    bottom: 35px;
+}
+
+#redes {
+    top: 32px;
+    position: relative;
+    right:10px;
+}
+
+@media (max-width: 767.98px) {
+    #img  {
+        margin-top: 10px !important;
+    }} 
+
+#img {
+    margin-top: -60px;
+}
+
+@media (max-width: 767.98px) {
+    .footer {    
+      flex-direction: row;
+      justify-content: center;
+    }}
+
+      
+  @media (max-width: 767.98px) {
+    #eu {
+      right: 10px !important;  
+      bottom: 60px;
+      margin: auto !important;
+      align-items: center !important;
+      text-align: center !important;
+      float:none !important;
+    }}
+    @media (max-width: 767.98px) {
+    .navfooter ul li {
+        bottom: 100px !important;
+        margin: auto !important;
+      }}
+
+    @media (max-width: 767.98px) {
+        #redes {
+            position: relative;
+          bottom: 10px;
+          margin: auto !important;
+          align-items: center !important;
+          text-align: center !important;
+          float:none !important;
+        }}

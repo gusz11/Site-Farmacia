@@ -1,0 +1,163 @@
+:root{
+    --back-color: #fff;
+    --badge-color:#206934;
+    --text-color: black;
+    --geral-color: #F5E7CC;
+    --background-color: linear-gradient(180deg, rgba(52, 79, 32, 0.5) 52.1%, rgba(52, 79, 32, 0.5) 52.1%, rgba(255, 255, 255, 0.5) 99.17%);
+    --home-button: url(../svg/home.svg);
+}
+
+.dark{
+    --back-color: #2E2E2E;
+    --badge-color:#206934;
+    --text-color: white;
+    --geral-color: #F5E7CC;
+    --background-color: linear-gradient(180deg, rgba(52, 79, 32, 0.7) 52.1%, rgba(52, 79, 32, 0.7) 52.1%, rgba(46, 46, 46, 0.7) 99.17%);
+    --home-button: url(../svg/homedark.svg);
+}
+
+.body {
+    background-color: var(--back-color);
+}
+
+.container{
+    height: 110vh;
+    background: var(--background-color); 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+#home button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent !important;
+    border: 0;
+    background-image: var(--home-button);
+    margin: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+@media (max-width: 767.98px) {
+#home {
+ margin-bottom: 80px;
+}}
+
+#home {
+    transition: transform 0.5s;
+}
+
+#home:hover {
+    transform: translateY(-5px);
+}
+
+#home button:active{
+    outline: none;
+}
+
+#home button:focus {
+    outline: none;
+}
+
+#badge {
+    position: relative;
+    width: 13em;
+    height: 70px;
+    margin-top: 75px;
+    margin-left: 3vw;
+    margin-bottom: 50px;
+    background-color: var(--badge-color);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #E6F4EA;
+    align-items: center;
+    }
+
+    @media (max-width: 767.98px) {
+        #badge {
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }}
+#img {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#conteudo {
+    height: 60vh;
+    width: 70%;
+    background-color: #206934;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.caixap {
+    width: 80%;
+    height: 4rem;
+    background-color: var(--geral-color);
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    top: 3rem;
+    margin-bottom: 100px;
+}
+
+.caixag {
+    width: 80%;
+    height: 15rem;
+    background-color: var(--geral-color);
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+}
+
+.move-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 63px;
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    line-height: 39px;
+    color: black !important;
+    background-color: var(--geral-color) !important;
+    border: none !important;
+  }
+
+  .move-btn:hover {
+    background-color: #D2C09F !important;
+    transition: background-color 0.5s;
+}
+
+@media (max-width: 767.98px) {
+    #badge {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 17rem;
+        font-size: 20px;
+    }}
+
+    @media (max-width: 767.98px) {
+        #img {
+            width: 40px;
+            height: 40px;
+        }}
+        @media (max-width: 767.98px) {
+        #conteudo {
+            height: 55vh;
+            width: 85%;
+
+        }}
+
+        @media (max-width: 767.98px) {
+            .caixag {
+                height: 10rem
+            }}

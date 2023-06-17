@@ -1,0 +1,239 @@
+:root {
+    --text-color: black;
+    --background-color: #fff;
+    --footer-color: #4B7A27;
+    --badge-color:#206934;
+    --card-background: #53B26D;
+    --button-color: #FFD282;
+    --home-button: url(../svg/home.svg);
+}
+
+.dark {
+    --background-color: #2E2E2E;
+    --text-color: #fff;
+    --footer-color: #4B7A27;
+    --badge-color:#206934;
+    --card-background: #53B26D;
+    --button-color: #FFD282;
+    --home-button: url(../svg/homedark.svg);
+}
+
+.body {
+    background-color: var(--background-color);
+}
+
+#home button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent !important;
+    border: 0;
+    background-image: var(--home-button);
+    margin: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+@media (max-width: 767.98px) {
+#home {
+ margin-bottom: 80px;
+}}
+
+#home {
+    transition: transform 0.5s;
+}
+
+#home:hover {
+    transform: translateY(-5px);
+}
+
+#home button:active{
+    outline: none;
+}
+
+#home button:focus {
+    outline: none;
+}
+
+#badge {
+    position: relative;
+    width: 10em;
+    height: 66px;
+    margin-top: 75px;
+    margin-left: 3vw;
+    margin-bottom: 70px;
+    padding-right: 0px;
+    background-color: var(--badge-color);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #E6F4EA;
+    align-items: center;
+    }
+    
+    @media (max-width: 767.98px) {
+        #badge {
+            margin: auto;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }}
+
+#img {
+    width: 170px;
+    height: 170px;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-left: -25px;
+}
+
+@media (max-width: 767.98px) {
+    #img {
+        position: relative;
+        margin: auto;
+        right: 120px;
+        margin-top: 120px;
+        margin-bottom: 0;
+    }}
+
+    @media (max-width: 767.98px) {
+        .text {
+            margin-top: 10px !important;
+            }}
+
+#col-1 {
+    width: 50%;
+}
+
+#col-2 {
+    width: 50%;
+    float: left;
+}
+
+.text {
+color: var(--text-color);
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+margin-top: 100px;
+margin-right: 50px;
+display: inline-block;
+}
+
+.card {
+    background-color: var(--card-background) !important;
+}
+
+.card-deck {
+    margin: auto !important;
+    margin-bottom: 70px !important;
+}
+
+#modal-button{
+    background-color: var(--button-color);
+    color: black;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+#modal-button:hover{
+    background-color: #F1C069 !important;
+    transition: background-color 0.5s;
+}
+
+.modal .modal-content {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+main {
+    width: 70%;
+    display:block;
+    margin: auto;
+}
+
+.modal-footer button{
+    margin: auto;
+    color: black;
+    background-color: var(--button-color);
+    border: none;
+}
+
+#comprar:hover{
+    background-color: #F1C069 !important;
+    transition: background-color 0.5s;
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--footer-color);
+    
+}
+
+.navfooter ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    position: relative;
+    top: 7px;
+    left: 150px;
+}
+
+.navfooter img{
+    transition: transform 0.5s;
+}
+
+.navfooter img:hover{
+    transform: translateY(-5px);
+
+}
+
+.footer-content {
+    color: #fff;
+}
+
+#eu {
+    position: relative;
+    float: right;
+    bottom: 35px;
+}
+
+#redes {
+    top: 32px;
+    position: relative;
+    right:10px;
+}
+
+@media (max-width: 767.98px) {
+    .footer {
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 0px;
+    }}
+
+  @media (max-width: 767.98px) {
+    #eu {
+      right: 10px;  
+      bottom: 60px;
+      margin: auto !important;
+      align-items: center !important;
+      text-align: center !important;
+      float:none !important;
+    }}
+
+    @media (max-width: 767.98px) {
+    .navfooter ul li {
+        bottom: 100px !important;
+        margin: auto !important;
+      }}
+
+    @media (max-width: 767.98px) {
+        #redes {
+            position: relative;
+          bottom: 10px;
+          margin: auto !important;
+          align-items: center !important;
+          text-align: center !important;
+          float:none !important;
+        }}

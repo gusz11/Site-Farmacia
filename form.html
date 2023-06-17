@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/Pill.png" type="image/png">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Formulário de Consulta</title>
+  </head>
+  <body class="body">
+<main>
+    <div class="container" id="bug">
+        <div class="row">
+          <div class="col">
+            <div id="home">
+              <button id="home" onclick="window.location.href='index.html'">
+              </button>
+            </div>
+            <span id="formbadge" class="badge badge-success d-flex justify-content-center align-items-center">Formulário de Consulta</span>
+            <h5 id="textform">É de suma importância que você preencha esses dados corretamente, sempre se atentando para as informações verdadeiras, sua saúde não é brincadeira. </h5>
+            <img id="formimg" src="img/Form img.png">
+            <form class="form" onsubmit="return confirmarFormulario()">
+                <div class="form-group">
+                    <label for="User"><img id="icons" src="img/Name Tag.png">Nome</label>
+                    <input type="text" class="form-control custom-input" id="user" aria-describedby="name" placeholder="Insira aqui" required>
+                  </div>
+                <div class="form-group">
+                  <label for="Idade"><img id="icons" src="img/Age Tag.png">Idade</label>
+                  <input type="number" class="form-control custom-input" id="age" aria-describedby="age" placeholder="Insira aqui" required>
+                </div>
+                <div class="form-group">
+                  <label for="medicamentos"><img id="icons" src="img/Pill Bottle.png">Medicamentos</label>
+                    <select id="select" name="medicamentos" required>
+                    <option disabled selected value="">Escolha aqui</option>
+                    <option value="B-Vit">B-Vit</option>
+                    <option value="Ecos">Ecos</option>
+                    <option value="Dorflex">Acnen</option>
+                    <option value="Lacto-Purga">Lacto-Purga</option>
+                    <option value="Aspirina">Aspirina</option>
+                    <option value="Loratamed">Vonau Flash</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="password"><img id="icons" src="img/Clipboard.png">Escreva aqui seus sintomas</label>
+                    <textarea id="textarea" placeholder="Insira aqui" rows="7" required>                        
+                        </textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary btn-lg move-btn">Enviar</button>
+              </form>
+          </div>     
+</main>
+  </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html> 
