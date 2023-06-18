@@ -171,6 +171,7 @@ color: var(--hover-color) !important;
             position: absolute;
             left: 80px;
             top: 260px;
+            z-index: 3;
         }}
         @media (max-width: 767.98px) {
             #carrinho {
