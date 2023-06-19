@@ -161,13 +161,17 @@ p{
 .footer {
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
     background-color: var(--footer-color);
-    bottom: 0;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
-    position: relative;
+    position: absolute;
+    margin-top: auto;
 }
 
+main {
+    margin-bottom: 120px;
+}
 .navfooter ul li{
     list-style: none;
     display: inline;

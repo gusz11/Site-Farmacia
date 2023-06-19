@@ -162,21 +162,28 @@ color: var(--hover-color) !important;
 @media (max-width: 767.98px) {
     #user {
         position: relative;
-        left: 16px;
+        left: 105px;
         top: 1px;
     }}
+
+
+    @media (max-width: 446px) {
+        #switch {
+            top: 263px !important;
+        }}
 
     @media (max-width: 767.98px) {
         #switch {
             position: absolute;
-            left: 80px;
-            top: 260px;
+            left: 180px;
+            top: 243px;
             z-index: 3;
         }}
         @media (max-width: 767.98px) {
             #carrinho {
                 position: absolute;
-                bottom: 6px;
+                bottom: 5.5px;
+                left: 135px;
             }}
 
 #user:hover {

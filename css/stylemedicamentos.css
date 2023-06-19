@@ -90,13 +90,16 @@
         position: relative;
         margin: auto;
         right: 120px;
-        margin-top: 120px;
+        margin-top: 160px;
         margin-bottom: 0;
     }}
 
     @media (max-width: 767.98px) {
         .text {
             margin-top: 10px !important;
+            position: relative;
+            left: 50px;
+            width: 77%;
             }}
 
 #col-1 {
@@ -126,6 +129,11 @@ display: inline-block;
     margin: auto !important;
     margin-bottom: 70px !important;
 }
+
+@media (max-width: 767.98px) {
+    .card-deck {
+        margin-bottom: 0px !important;
+    }}
 
 #modal-button{
     background-color: var(--button-color);
