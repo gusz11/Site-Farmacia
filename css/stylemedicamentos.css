@@ -67,6 +67,7 @@
     line-height: 39px;
     color: #E6F4EA;
     align-items: center;
+    text-align: center;
     }
     
     @media (max-width: 767.98px) {
@@ -75,6 +76,7 @@
             margin-left: 20px;
             margin-bottom: 30px;
             margin-top: 20px;
+            width: 9em;
         }}
 
 #img {
