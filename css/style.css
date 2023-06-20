@@ -2,11 +2,6 @@
     margin: 0;
 }
 
-@media (max-width: 767.98px) {
-* {
-    overflow-x: hidden;
-}}
-
 .body {
     background-color: var(--background-color);
     transition: background-color 0.5s;
