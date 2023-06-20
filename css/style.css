@@ -172,6 +172,11 @@ color: var(--hover-color) !important;
             top: 263px !important;
         }}
 
+    @media (max-width: 232px) {
+        #switch {
+            top: 298px !important;
+        }}    
+
     @media (max-width: 767.98px) {
         #switch {
             position: absolute;
